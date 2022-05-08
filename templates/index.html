@@ -12,7 +12,6 @@
     {% for item in feed %}
     <h1 class="l-fontWeight-bold l-color-dark">Podcast RSS配信</h1>
     <div class="l-spacing-top"></div>
-
     <p class="l-color-dark"><b>配信者: {{ item.authors[0].name }}</b></p>
     <p class="l-color-dark"><b>RSS: <a href="{{ item.title_detail.base }}">anchor.fm/s/96134214/podcast/rss</a></b></p>
 
@@ -24,8 +23,7 @@
     <p class="l-color-dark">&nbsp;<b>投稿日時:</b> {{ item.published }}</p>
     <br>
     <video controls poster="{{item.image.href}}" class="l-btn-max l-bg-dark" style="border-radius: 30px;max-height: 300px" src="{{ item.links[1].href }}"></video>
-
-    <p>{{ item }}</p>
+    <hr>
     {% endfor %}
 </body>
 </html>
