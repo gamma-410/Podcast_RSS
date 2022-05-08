@@ -1,0 +1,2 @@
+# Podcast_RSS
+AnchorでRSS配信している自分のPodcast番組をストリームするアプリ
